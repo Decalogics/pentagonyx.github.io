@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'NewComicTitle';
+    src: url(newcomictitle.ttf)
+}
+
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    width: 75%;
+    height: 75%;
+    padding: 0;
+    overflow-x: hidden
+}
+
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+head { 
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+    background-color: black;
+    background-image: url(/MosaicWallpaper.png);
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+    margin: 0;
+}
+
+div {
+    position: relative;
+    display: block;
+}
+
+article {
+    background-color: black;
+    color: white;
+    border: 1vw solid yellow;
+    padding: 3vh 3vw;
+    margin: 2vh;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Times New Roman', 'Comic Sans MS';
+    border-radius: 2em;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 75vw;
+    position: relative;
+}
+
+/*text */
+p {
+    font-size: 3vw;
+    margin: 2vw;
+}
+
+h6 {
+    font-size: 1vw;
+}
+
+h5 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 3vw;
+}
+
+h3 {
+    color: orangered;
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 7vw;
+    font-family: NewComicTitle, Courier, monospace, 'Comic Sans MS';
+    text-align: center;
+    color: yellow;
+    text-shadow: 1vw 1vw black;
+    margin-bottom: 1vh;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+/*iframe shit*/                                               
+#stream {
+    float: left;
+}
+iframe {
+    height: 45vw;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/*list crap*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 3vw;
+}
+
+.bullet {
+    width: auto;
+    height: .8em;
+    padding-top: -20%;
+    top: 10%;
+}
+/*characters*/
+.imgleft {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    right: 87vw;
+    rotate: 30deg;
+
+    overflow-x: hidden;
+}
+
+.imgright {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    left: 87vw;
+    rotate: -30deg;
+    overflow-x: hidden;
+
+}
+
+#Okabe {
+    top: 10vw;
+    width: 30vw;
+    rotate: 18deg;
+    right: 90vw;
+    overflow-x: hidden;
+}
+
+#Kurisu {
+    top: 45vw;
+    width: 32vw;
+    rotate: -50deg;
+    left: 80vw;
+    overflow-x: hidden;
+}
+
+#Flame506 {
+    top: 460vw;
+    width: 22vw;
+    rotate: -34deg;
+    left: 88vw;
+    overflow-x: hidden;
+}
+
+.mainul{
+    display: flex;
+	margin: 0;
+	padding: 0%;
+	list-style: none;
+}
+.top{
+	float: left;
+	width: 20%;
+	height: 40px;
+	background-color: black;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	font-size: 90%;
+    margin: 0;
+    padding: 0;
+}
+.sub{
+	background-color: black;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 90%;
+	display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.seconddropdown>li{
+	background-color: black;
+	line-height: 40px;
+	text-align: center;
+	font-size: 90%;
+	display: none;
+	width: 25%;
+	float: left;
+}
+ul.mainul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul.mainul li a:hover {
+	background-color: green;
+}
+.top:hover .sub {
+	display: block;
+}
+.active{
+	background-color: green;
+}
